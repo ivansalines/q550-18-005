@@ -1,0 +1,119 @@
+test_all_shapes_bounded_equal_area (test_ramp_stress.StressTests.test_all_shapes_bounded_equal_area) ... ok
+test_area_integral_numerical (test_ramp_stress.StressTests.test_area_integral_numerical) ... ok
+test_centered_phase (test_ramp_stress.StressTests.test_centered_phase) ... ok
+test_clock_equivalence_after_end (test_ramp_stress.StressTests.test_clock_equivalence_after_end) ... ok
+test_cubic_reference (test_ramp_stress.StressTests.test_cubic_reference) ... ok
+test_shape_categories (test_ramp_stress.StressTests.test_shape_categories) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.090s
+
+OK
+v18.49o baseline original r 0.3 beta:2:2 margin 0.560452078 share 0.670577359 winner 6-7
+v18.49o baseline autonomous r 0.3 beta:2:2 margin 0.560236047 share 0.670504231 winner 6-7
+v18.49o duration_survey original r 0.309 beta:2:2 margin 0.479872093 share 0.613223447 winner 6-7
+v18.49o duration_survey original r 0.33 beta:2:2 margin -0.149157263 share 0.233323567 winner 7-8
+v18.49o duration_survey autonomous r 0.309 beta:2:2 margin 0.478858162 share 0.612431523 winner 6-7
+v18.49o duration_survey autonomous r 0.33 beta:2:2 margin -0.156596483 share 0.230559728 winner 7-8
+v18.49o shape_stress original r 0.3 beta:64:64 margin 0.552030575 share 0.666477381 winner 6-7
+v18.49o shape_stress original r 0.3 beta:2:100 margin 0.594088414 share 0.686955197 winner 6-7
+v18.49o shape_stress original r 0.3 recoil:4:1 margin 0.566523151 share 0.673527731 winner 6-7
+v18.49o shape_stress autonomous r 0.3 beta:64:64 margin 0.551762996 share 0.666375837 winner 6-7
+v18.49o shape_stress autonomous r 0.3 beta:2:100 margin 0.594012134 share 0.686959169 winner 6-7
+v18.49o shape_stress autonomous r 0.3 recoil:4:1 margin 0.566338893 share 0.673472003 winner 6-7
+v18.49o duration_bisection original r 0.3195 beta:2:2 margin 0.298807358 share 0.465437351 winner 6-7
+v18.49o duration_bisection original r 0.32475 beta:2:2 margin 0.128000227 share 0.354643683 winner 6-7
+v18.49o duration_bisection original r 0.327375 beta:2:2 margin -0.005481023 share 0.293811011 winner 7-8
+v18.49o duration_bisection original r 0.3260625 beta:2:2 margin 0.062956684 share 0.324406743 winner 6-7
+v18.49o duration_bisection original r 0.3267187 beta:2:2 margin 0.029117468 share 0.30912761 winner 6-7
+v18.49o duration_bisection autonomous r 0.3195 beta:2:2 margin 0.296674795 share 0.463354678 winner 6-7
+v18.49o duration_bisection autonomous r 0.32475 beta:2:2 margin 0.121795246 share 0.351967479 winner 6-7
+v18.49o duration_bisection autonomous r 0.327375 beta:2:2 margin -0.012481463 share 0.291001933 winner 7-8
+v18.49o duration_bisection autonomous r 0.3260625 beta:2:2 margin 0.056320812 share 0.321644397 winner 6-7
+v18.49o duration_bisection autonomous r 0.3267187 beta:2:2 margin 0.022289527 share 0.306336573 winner 6-7
+v18.49o dense_control original r 0.3 beta:2:2 margin 0.560452078 share 0.670577359 winner 6-7
+v18.49o dense_control autonomous r 0.3 beta:2:2 margin 0.560236047 share 0.670504231 winner 6-7
+v18.49o dense_boundary original r 0.3267187 beta:2:2 margin 0.029117468 share 0.30912761 winner 6-7
+v18.49o dense_boundary original r 0.327375 beta:2:2 margin -0.005481023 share 0.293811011 winner 7-8
+v18.49o dense_boundary autonomous r 0.3267187 beta:2:2 margin 0.022289527 share 0.306336573 winner 6-7
+v18.49o dense_boundary autonomous r 0.327375 beta:2:2 margin -0.012481463 share 0.291001933 winner 7-8
+{
+  "status": "FOCUSED_BOUNDARY_BRACKETED_NUMERICALLY",
+  "number_of_unique_cases": 12,
+  "number_of_evaluations": 28,
+  "failed_evaluations": 0,
+  "duration_brackets_refined": [
+    {
+      "kind": "original",
+      "r_lower": 0.32671874999999995,
+      "r_upper": 0.32737499999999997,
+      "margin_lower": 0.029117467733147218,
+      "margin_upper": -0.005481023430295273,
+      "boundary_estimate": 0.32704687499999996,
+      "samples": [
+        [
+          0.3195,
+          0.29880735764290967
+        ],
+        [
+          0.32475,
+          0.12800022743293452
+        ],
+        [
+          0.32737499999999997,
+          -0.005481023430295273
+        ],
+        [
+          0.3260625,
+          0.06295668380452846
+        ],
+        [
+          0.32671874999999995,
+          0.029117467733147218
+        ]
+      ],
+      "sign_change_confirmed": true
+    },
+    {
+      "kind": "autonomous",
+      "r_lower": 0.32671874999999995,
+      "r_upper": 0.32737499999999997,
+      "margin_lower": 0.022289526997106457,
+      "margin_upper": -0.012481462961011047,
+      "boundary_estimate": 0.32704687499999996,
+      "samples": [
+        [
+          0.3195,
+          0.2966747948499944
+        ],
+        [
+          0.32475,
+          0.12179524559794752
+        ],
+        [
+          0.32737499999999997,
+          -0.012481462961011047
+        ],
+        [
+          0.3260625,
+          0.05632081181927262
+        ],
+        [
+          0.32671874999999995,
+          0.022289526997106457
+        ]
+      ],
+      "sign_change_confirmed": true
+    }
+  ],
+  "numeric_controls": {
+    "forward_regression": 3.424991987393049e-13,
+    "max_mechanical_ledger_error": 3.166698674117452e-11,
+    "min_relative_eigen_gap": 0.06061780386249581,
+    "max_parent_cubic_difference": 6.439515587430833e-12
+  }
+}
+PASS Q550 v18.49o count, historical regression, eigen-gap, bracket sanity
+Wrote 2 measured v18.49o figures
+Wrote v18.49o scientific report
+Created: /root/elab1/hysteresis/q550_dominance_boundary_continuation_ramp_shape_stress_v18_49o_bundle_sendback.zip
