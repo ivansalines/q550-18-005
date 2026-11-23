@@ -1,0 +1,63 @@
+test_alternative_volume_form (test_source_math.TestLiouvilleProjection.test_alternative_volume_form) ... ok
+test_density_tau_constant (test_source_math.TestLiouvilleProjection.test_density_tau_constant) ... ok
+test_exact_density (test_source_math.TestLiouvilleProjection.test_exact_density) ... ok
+test_gradient_finite_difference (test_source_math.TestLiouvilleProjection.test_gradient_finite_difference) ... ok
+test_occupations_complete (test_source_math.TestLiouvilleProjection.test_occupations_complete) ... ok
+test_projector_rate_balance (test_source_math.TestLiouvilleProjection.test_projector_rate_balance) ... ok
+test_projector_sign_invariance (test_source_math.TestLiouvilleProjection.test_projector_sign_invariance) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.252s
+
+OK
+v18.49j original ramp=0.285000 log_volume=-1.180180821 | Liouville residual=5.06e-14 | projection-rate residual=1.00e-04
+v18.49j original ramp=0.292000 log_volume=-1.190750743 | Liouville residual=2.13e-14 | projection-rate residual=1.48e-04
+v18.49j original ramp=0.296333 log_volume=-1.197293960 | Liouville residual=2.71e-14 | projection-rate residual=2.04e-04
+v18.49j original ramp=0.300000 log_volume=-1.202831713 | Liouville residual=4.44e-15 | projection-rate residual=2.64e-04
+v18.49j original ramp=0.305000 log_volume=-1.210382878 | Liouville residual=1.15e-14 | projection-rate residual=3.70e-04
+v18.49j original ramp=0.309000 log_volume=-1.216424112 | Liouville residual=6.66e-15 | projection-rate residual=4.86e-04
+v18.49j autonomous ramp=0.285000 log_volume=-1.180180230 | Liouville residual=3.73e-14 | projection-rate residual=1.00e-04
+v18.49j autonomous ramp=0.292000 log_volume=-1.190750149 | Liouville residual=1.40e-14 | projection-rate residual=1.49e-04
+v18.49j autonomous ramp=0.296333 log_volume=-1.197293365 | Liouville residual=2.80e-14 | projection-rate residual=2.06e-04
+v18.49j autonomous ramp=0.300000 log_volume=-1.202831117 | Liouville residual=2.44e-15 | projection-rate residual=2.66e-04
+v18.49j autonomous ramp=0.305000 log_volume=-1.210382281 | Liouville residual=1.47e-14 | projection-rate residual=3.74e-04
+v18.49j autonomous ramp=0.309000 log_volume=-1.216423513 | Liouville residual=6.66e-15 | projection-rate residual=4.90e-04
+{
+  "version": "v18.49j",
+  "classification": "AUTHENTIC_Q550_LIOUVILLE_AND_STRAIN_PROJECTION_DIAGNOSTIC",
+  "parent_i_authenticated_to_J": true,
+  "physical_integrations": 14,
+  "frame_integrations": 12,
+  "ramp_set": [
+    0.285,
+    0.292,
+    0.296333,
+    0.3,
+    0.305,
+    0.309
+  ],
+  "kappas": {
+    "original": 0.16666666666666666,
+    "autonomous": 0.16659961041764054
+  },
+  "phase_grid_samples": 61,
+  "source_max_errors": {
+    "parent_history": 3.424991987393049e-13,
+    "parent_logvolume": 0.0,
+    "parent_occupation": 1.3322676295501878e-15,
+    "liouville": 5.062616992290714e-14,
+    "metric_source_quadrature": 5.995204332975845e-14,
+    "density_formula": 3.552713678800501e-15,
+    "occupation_balance": 0.0004898482116622027,
+    "occupations_sum": 1.7763568394002505e-15,
+    "explicit_kappa_trace": 0.0
+  },
+  "explicit_kappa_trace_is_zero": "exact in analytic coupling_jet: kappa acts on velocities, no material diagonal term",
+  "integrated_cancellation_ratio_range": [
+    0.9996943238913267,
+    0.9997040551173327
+  ],
+  "interpretation": "Liouville identity is geometric under declared metric form. Near cancellation across kappa is empirical, not an additional identity. Occupation derivative separates moving vector and moving eigenprojectors; neither alone is energy transfer. Finite-gap pullback is a diagnostic."
+}
+v18.49j checks passed: 14 physical, 12 tangent, all row counts and scientific gates
+v18.49j sendback authenticated: 28 files + manifest
