@@ -1,0 +1,30 @@
+test_gauge_strain (test_strain_math.StrainMathTests.test_gauge_strain) ... ok
+test_isotropic_expansion (test_strain_math.StrainMathTests.test_isotropic_expansion) ... ok
+test_metric_stretch (test_strain_math.StrainMathTests.test_metric_stretch) ... ok
+test_metric_volume_chart (test_strain_math.StrainMathTests.test_metric_volume_chart) ... ok
+test_metric_volume_tau (test_strain_math.StrainMathTests.test_metric_volume_tau) ... ok
+test_polar_kinetic_jacobian (test_strain_math.StrainMathTests.test_polar_kinetic_jacobian) ... ok
+test_subspace_and_sign_free_axes (test_strain_math.StrainMathTests.test_subspace_and_sign_free_axes) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.058s
+
+OK
+v18.49i original ramp=0.285000: log volume q=.5=-1.18018082; axis turn q=.35→.65=21.7389 deg
+v18.49i original ramp=0.292000: log volume q=.5=-1.19075074; axis turn q=.35→.65=21.8221 deg
+v18.49i original ramp=0.296333: log volume q=.5=-1.19729396; axis turn q=.35→.65=21.8728 deg
+v18.49i original ramp=0.300000: log volume q=.5=-1.20283171; axis turn q=.35→.65=21.9152 deg
+v18.49i original ramp=0.305000: log volume q=.5=-1.21038288; axis turn q=.35→.65=21.9722 deg
+v18.49i original ramp=0.309000: log volume q=.5=-1.21642411; axis turn q=.35→.65=22.0170 deg
+v18.49i autonomous ramp=0.285000: log volume q=.5=-1.18018023; axis turn q=.35→.65=21.7391 deg
+v18.49i autonomous ramp=0.292000: log volume q=.5=-1.19075015; axis turn q=.35→.65=21.8223 deg
+v18.49i autonomous ramp=0.296333: log volume q=.5=-1.19729337; axis turn q=.35→.65=21.8730 deg
+v18.49i autonomous ramp=0.300000: log volume q=.5=-1.20283112; axis turn q=.35→.65=21.9153 deg
+v18.49i autonomous ramp=0.305000: log volume q=.5=-1.21038228; axis turn q=.35→.65=21.9723 deg
+v18.49i autonomous ramp=0.309000: log volume q=.5=-1.21642351; axis turn q=.35→.65=22.0172 deg
+SCIENTIFIC_GATES_PASS {
+  "max_liouville_log_volume_residual": 3.503863865716994e-13,
+  "max_H_strain_regression": 5.10702591327572e-15,
+  "max_tau_volume_log_spread": 1.5543122344752192e-15
+}
+sendback complete: 27 hashed files + manifest
